@@ -1,0 +1,51 @@
+/* CSS declarations go here */
+body {
+  background-color: black;
+  text-align: center;
+  height: 200.1%;
+}
+
+#sound {
+  margin-top: 500px;
+}
+
+.column {
+  /*float: left;*/
+  width: 35px;
+  display: inline-block;
+  margin-top: 200px;
+}
+
+.meter-blob {
+  /*background-color: white;*/
+  width: 24px;
+  height: 24px;
+  margin: 5px;
+  border-radius: 12px;
+  transition: 750ms linear;
+}
+
+.meter-blob.active {
+  background-color: green;
+  transition: 125ms linear;
+}
+
+.meter-blob.borderline.active {
+  background-color: orange;
+}
+
+.meter-blob.overload.active {
+  background-color: red;
+}
+
+.meter-blob.other {
+  box-shadow: inset 0px 0px 0px 6px rgba(0,0,0,0.75);
+}
+
+input {
+  transform: rotate(270deg);
+  width: 500px;
+  position: relative;
+  top: 250px;
+  left: -60px;
+}

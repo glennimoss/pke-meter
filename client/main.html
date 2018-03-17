@@ -1,0 +1,123 @@
+<head>
+  <title>pke-meter</title>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+</head>
+
+<body>
+  {{#if isControl}}
+  {{> control}}
+  {{else}}
+  {{> main}}
+  {{/if}}
+</body>
+
+<template name="main">
+  <div class="column">
+    <div class="meter-blob overload"></div>
+    <div class="meter-blob overload"></div>
+    <div class="meter-blob borderline"></div>
+    <div class="meter-blob borderline"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+  </div>
+  <div class="column">
+    <div class="meter-blob overload"></div>
+    <div class="meter-blob overload"></div>
+    <div class="meter-blob borderline"></div>
+    <div class="meter-blob borderline"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+  </div>
+  <div class="column">
+    <div class="meter-blob overload"></div>
+    <div class="meter-blob overload"></div>
+    <div class="meter-blob borderline"></div>
+    <div class="meter-blob borderline"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+  </div>
+  <div class="column">
+    <div class="meter-blob overload"></div>
+    <div class="meter-blob overload"></div>
+    <div class="meter-blob borderline"></div>
+    <div class="meter-blob borderline"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+  </div>
+  <div class="column">
+    <div class="meter-blob overload"></div>
+    <div class="meter-blob overload"></div>
+    <div class="meter-blob borderline"></div>
+    <div class="meter-blob borderline"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+    <div class="meter-blob"></div>
+  </div>
+  <audio id="sound" src="/pke.mp3" onended="this.play()" controls="controls" autobuffer>
+  </audio>
+</template>
+
+<template name="control">
+  <input type="range" name="value_slider" min="0" max="20" value="0" />
+</template>
